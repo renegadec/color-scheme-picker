@@ -58,20 +58,20 @@ main {
     height: 414px;
 }
 
-.one{
-    background: #F55A5A;
+.color-1{
+    background: #000000;
 }
-.two{
-    background: #2B283A;
+.color-2{
+    background: #1A1919;
 }
-.three{
-    background: #FBF3AB;
+.color-3{
+    background: #343232;
 }
-.four{
-    background: #AAD1B6;
+.color-4{
+    background: #4F4A4A;
 }
-.five{
-    background: #A626D3;
+.color-5{
+    background: #6A6262;
 }
 
 .hex-values {

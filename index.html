@@ -10,27 +10,37 @@
     <title>Color Scheme Picker</title>
 </head>
 <body>
+    <!-- App container -->
     <main>
+        <!-- Controls: base color, scheme mode, action -->
         <section class="header">
-            <input type="color">
-            <select name="" id="">
-                <option value="">Monochrome</option>
+            <input type="color" id="color-picker">
+            <select name="" id="color-scheme-selector">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
             </select>
-            <button>Get color scheme</button>
+            <button id="get-color-scheme-btn">Get color scheme</button>
         </section>
+        <!-- Row of 5 swatches populated from The Color API response -->
         <section class="colors">
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
-            <div class="four"></div>
-            <div class="five"></div>
+            <div class="color-1"></div>
+            <div class="color-2"></div>
+            <div class="color-3"></div>
+            <div class="color-4"></div>
+            <div class="color-5"></div>
         </section>
+        <!-- Corresponding hex values for each swatch -->
         <section class="hex-values">
-            <div class="one">#F55A5A</div>
-            <div class="two">#F55A5A</div>
-            <div class="three">#F55A5A</div>
-            <div class="four">#F55A5A</div>
-            <div class="five">#F55A5A</div>
+            <div class="color-text-1">#F55A5A</div>
+            <div class="color-text-2">#F55A5A</div>
+            <div class="color-text-3">#F55A5A</div>
+            <div class="color-text-4">#F55A5A</div>
+            <div class="color-text-5">#F55A5A</div>
         </section>
     </main>
     <script src="/src/main.js" type="module" defer></script>
